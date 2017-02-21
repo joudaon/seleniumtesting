@@ -9,6 +9,12 @@ public class FirefoxDriverDemo {
 		WebDriver driver = new FirefoxDriver();
 		String baseURL = "http://www.google.es";
 		driver.get(baseURL);
+		if (driver.getTitle().equals("Google"))
+		{
+			System.out.println("Title: " + driver.getTitle());
+			System.out.println("Success");
+		}
+		driver.quit();
 	}
 
 }

@@ -2,7 +2,7 @@
 
 ##Table of Contents
 
--[Selenium Web Driver & FF Browser Copatibilities](#selenium-web-driver-and-ff-browser-compatibilities)
+- [Selenium Web Driver & FF Browser Copatibilities](#selenium-web-driver-and-ff-browser-compatibilities)
 
 ## Selenium Web Driver and FF Browser Compatibilities
 
