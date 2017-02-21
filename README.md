@@ -6,6 +6,7 @@
 - [Selenium Web Driver and Chrome Browser Copatibilities](#selenium-web-driver-and-chrome-browser-compatibilities)
 - [Selenium Web Driver and IE Browser Copatibilities](#selenium-web-driver-and-ie-browser-compatibilities)
 - [Setting up the Driver 3.0.x](#setting-up-the-driver-3-0-1)
+- [Firebug and Firepath Installation](#firebug-and-firepath-installation)
 
 ## Selenium Web Driver and FF Browser Compatibilities
 
@@ -37,3 +38,10 @@ We must declare "System.setProperty("key", "def")" before declaring FirefoxDrive
 2| System.setProperty("webdriver.gecko.driver", "pathtogeckodriver\\geckodriver.exe");
 3| driver = new FirefoxDriver();
 ```
+
+## Firebug and Firepath Installation
+
+Firebug: https://addons.mozilla.org/en-US/firefox/addon/firebug/versions/
+| Firefox | Firebug  | Firepath |
+| ------ | ------ | ------ |
+| [v.45.0](https://ftp.mozilla.org/pub/firefox/releases/45.0/) | [v.2.0.18]( https://addons.mozilla.org/en-US/firefox/addon/firebug/versions/) | [v.0.9.7.1.1-signed.1-signed](https://addons.mozilla.org/es/firefox/addon/firepath/) |

@@ -7,7 +7,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class IdXPATHDemo {
 
 	public static void main(String[] args) {
-		// lst-ib
+		
 		WebDriver driver = new FirefoxDriver();
 		String baseURL = "http://www.google.com";
 		driver.manage().window().maximize();  //Maximizes the windows
