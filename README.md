@@ -21,9 +21,12 @@
 | [v.2.52](http://selenium-release.storage.googleapis.com/index.html?path=2.52/) | [v.56.0.2924.87](http://www.filehorse.com/download-google-chrome-64/) | [v.2.27](https://chromedriver.storage.googleapis.com/index.html) |
 
 ## Selenium Web Driver and IE Browser Compatibilities
+
+x32 version faces less issues than x64
+
 | Selenium Web Driver | IE Browser  | IE Driver |
 | ------ | ------ | ------ |
-| [v.2.52](http://selenium-release.storage.googleapis.com/index.html?path=2.52/) | [v.11.0.9600.18537](https://www.microsoft.com/es-es/download/details.aspx?id=40854) | [v.3.0](http://selenium-release.storage.googleapis.com/3.0/IEDriverServer_x64_3.0.0.zip) |
+| [v.2.52](http://selenium-release.storage.googleapis.com/index.html?path=2.52/) | [v.11.0.9600.18537](https://www.microsoft.com/es-es/download/details.aspx?id=40854) | [v.3.0](http://selenium-release.storage.googleapis.com/index.html?path=3.0/) |
 
 ## Setting up the driver 3.0.1
 
