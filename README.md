@@ -41,7 +41,6 @@ We must declare "System.setProperty("key", "def")" before declaring FirefoxDrive
 
 ## Firebug and Firepath Installation
 
-Firebug: https://addons.mozilla.org/en-US/firefox/addon/firebug/versions/
 | Firefox | Firebug  | Firepath |
 | ------ | ------ | ------ |
 | [v.45.0](https://ftp.mozilla.org/pub/firefox/releases/45.0/) | [v.2.0.18]( https://addons.mozilla.org/en-US/firefox/addon/firebug/versions/) | [v.0.9.7.1.1-signed.1-signed](https://addons.mozilla.org/es/firefox/addon/firepath/) |
