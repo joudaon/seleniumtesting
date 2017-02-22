@@ -1,0 +1,15 @@
+1. id and name -> If both are unique, both have same performance
+2. css
+3. xpath
+4. classname, linktext, partiallinktext, tagname -> Everything else is same
+
+----
+
+1. id -> fastest
+2. name
+3. classname
+4. xpath
+5. linktext
+6. partial linktext
+7. tagname
+8. css selector
