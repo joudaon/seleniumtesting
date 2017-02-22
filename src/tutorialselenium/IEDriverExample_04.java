@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
 
-public class IEDriverExample {
+public class IEDriverExample_04 {
 
 	public static void main(String[] args) {
 		String baseURL = "http://www.google.com";

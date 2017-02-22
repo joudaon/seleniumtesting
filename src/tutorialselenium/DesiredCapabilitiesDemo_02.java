@@ -6,7 +6,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 
-public class DesiredCapabilitiesDemo {
+public class DesiredCapabilitiesDemo_02 {
 
 	public static void main(String[] args) {
 		WebDriver driver;

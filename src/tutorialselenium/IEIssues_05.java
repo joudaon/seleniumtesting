@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
-public class IEIssues {
+public class IEIssues_05 {
 	
 	// Even if you have windows 64-bit version, please download IEDriverServer 32-bit version
 	// All protected zones settings should be same (Disabled / Enabled)

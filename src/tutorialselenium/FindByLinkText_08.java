@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class FindByLinkText {
+public class FindByLinkText_08 {
 
 	public static void main(String[] args) throws Exception {
 		WebDriver driver = new FirefoxDriver();
