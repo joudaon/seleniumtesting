@@ -1,7 +1,5 @@
 package tutorialselenium;
 
-import static org.junit.Assert.*;
-
 import java.util.concurrent.TimeUnit;
 
 import org.junit.After;
