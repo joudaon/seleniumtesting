@@ -11,8 +11,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-import com.thoughtworks.selenium.webdriven.commands.IsChecked;
-
 public class WorkingWithElementsList_17 {
 
 	private WebDriver driver;
