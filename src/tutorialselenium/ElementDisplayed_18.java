@@ -10,7 +10,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class ElementDisplayed {
+public class ElementDisplayed_18 {
 
 	private WebDriver driver;
 	String baseUrl1;
