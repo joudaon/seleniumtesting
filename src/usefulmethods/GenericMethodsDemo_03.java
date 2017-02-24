@@ -8,13 +8,13 @@ import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import usefulmethods.GenericMethods_03;
+import usefulmethods.GenericMethods_Old_03;
 
 public class GenericMethodsDemo_03 {
 
 	private WebDriver driver;
 	private String baseUrl;
-	private GenericMethods_03 gm;
+	private GenericMethods_Old_03 gm;
 	
 	@Before
 	public void setUp() throws Exception {
@@ -22,7 +22,7 @@ public class GenericMethodsDemo_03 {
 		baseUrl = "https://letskodeit.teachable.com/p/practice/";
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		gm = new GenericMethods_03(driver);
+		gm = new GenericMethods_Old_03(driver);
 	}
 
 	@Test

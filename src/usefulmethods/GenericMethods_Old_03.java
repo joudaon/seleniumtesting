@@ -7,11 +7,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class GenericMethods_03 {
+public class GenericMethods_Old_03 {
 
 	WebDriver driver;
 	
-	public GenericMethods_03(WebDriver driver){
+	public GenericMethods_Old_03(WebDriver driver){
 		this.driver = driver;
 	}
 	

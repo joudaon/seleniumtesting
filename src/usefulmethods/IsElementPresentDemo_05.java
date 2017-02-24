@@ -12,7 +12,7 @@ public class IsElementPresentDemo_05 {
 
 	private WebDriver driver;
 	private String baseUrl;
-	private GenericMethods_03 gm;
+	private GenericMethods_Old_03 gm;
 	
 	@Before
 	public void setUp() throws Exception {
@@ -20,7 +20,7 @@ public class IsElementPresentDemo_05 {
 		baseUrl = "https://letskodeit.teachable.com/p/practice/";
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		gm = new GenericMethods_03(driver);
+		gm = new GenericMethods_Old_03(driver);
 	}
 
 	@Test
