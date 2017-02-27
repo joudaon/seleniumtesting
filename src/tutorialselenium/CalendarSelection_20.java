@@ -1,5 +1,6 @@
 package tutorialselenium;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.junit.After;
@@ -39,6 +40,26 @@ public class CalendarSelection_20 {
 		// Click the date
 		dateToSelect.click();
 	}
+    
+    @Test
+    public void test2() throws Exception {
+		driver.get(baseUrl);
+		driver.findElement(By.id("tab-flight-tab")).click();
+		WebElement departingField = driver.findElement(By.id("flight-departing"));
+		departingField.click();   
+		WebElement calMonth = driver.findElement(By.xpath("//div[@class='datepicker-cal-month'][position()=1]"));
+		
+		List<WebElement> allValidDates = calMonth.findElements(By.tagName("button"));
+		
+		Thread.sleep(3000);
+		
+		for (WebElement date : allValidDates) {
+			if (date.getText().equals("28")) {
+				date.click();
+				break;
+			}
+		}
+    }
 	
 	@After
 	public void tearDown() throws Exception {
