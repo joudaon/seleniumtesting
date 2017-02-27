@@ -62,7 +62,7 @@ public class Screenshots_22 {
 	@After
 	public void tearDown() throws Exception {
 		String fileName = getRandomString(10) + ".png";
-		String directory = "C:\\..path...\\";
+		String directory = "C:\\...path...\\"; //Add your own path
 		
 		File sourceFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(sourceFile, new File(directory + fileName));
