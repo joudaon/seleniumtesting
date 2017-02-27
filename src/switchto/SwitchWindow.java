@@ -29,9 +29,6 @@ public class SwitchWindow {
 	@Test
 	public void test() throws InterruptedException {
 
-//		
-//		WebElement searchBox = driver.findElement(By.id("search-courses"));
-//		searchBox.sendKeys("python");
 		// Get the handle
 		String parentHandle = driver.getWindowHandle();
 		System.out.println("Parent Handle: " + parentHandle);
@@ -46,12 +43,27 @@ public class SwitchWindow {
 		// Switching between handles
 		for (String handle: handles) {
 			System.out.println(handle);
+			//Changing the focus to the new window
+			if (!handle.equals(parentHandle)) {
+				driver.switchTo().window(handle);
+				Thread.sleep(2000);
+				//Searching the textbox of the new window
+				WebElement searchBox = driver.findElement(By.id("search-courses"));
+				searchBox.sendKeys("python");
+				Thread.sleep(2000);
+				driver.close();
+				break;
+			}
 		}
 
 		// Switch back to the parent window
+		driver.switchTo().window(parentHandle);
+		driver.findElement(By.id("name")).sendKeys("test successful");
 	}
 
 	@After
 	public void tearDown() throws Exception {
+		Thread.sleep(2000);
+		driver.quit();
 	}
 }
