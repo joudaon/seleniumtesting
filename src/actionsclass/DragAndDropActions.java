@@ -19,6 +19,7 @@ public class DragAndDropActions {
 	public void setUp() throws Exception {
 		driver = new FirefoxDriver();
 		baseUrl = "http://www.dhtmlx.com/docs/products/dhtmlxTree/";
+		//baseUrl = "https://jqueryui.com/droppable/";
 
 		// Maximize the browser's window
 		driver.manage().window().maximize();
