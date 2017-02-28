@@ -7,6 +7,7 @@
 - [Selenium Web Driver and IE Browser Copatibilities](#selenium-web-driver-and-ie-browser-compatibilities)
 - [Setting up the Driver 3.0.x](#setting-up-the-driver-3-0-1)
 - [Firebug and Firepath Installation](#firebug-and-firepath-installation)
+- [Setting up Log4j2](#setting-up-log4j2)
 
 ## Selenium Web Driver and FF Browser Compatibilities
 
@@ -44,3 +45,12 @@ We must declare "System.setProperty("key", "def")" before declaring FirefoxDrive
 | Firefox | Firebug  | Firepath |
 | ------ | ------ | ------ |
 | [v.45.0](https://ftp.mozilla.org/pub/firefox/releases/45.0/) | [v.2.0.18]( https://addons.mozilla.org/en-US/firefox/addon/firebug/versions/) | [v.0.9.7.1.1-signed.1-signed](https://addons.mozilla.org/es/firefox/addon/firepath/) |
+
+## Setting up Log4j2
+
+All we need is the following two jars.
+
+- log4j-api-2.x.jar
+- log4j-core-2.x.jar
+
+They can be downloaded from: https://logging.apache.org/log4j/2.0/download.html
