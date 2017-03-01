@@ -54,3 +54,5 @@ All we need is the following two jars.
 - log4j-core-2.x.jar
 
 They can be downloaded from: https://logging.apache.org/log4j/2.0/download.html
+
+Log4j2.xml file is created in a folder and then that folder should be added to the build path of the project.
