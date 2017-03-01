@@ -73,6 +73,11 @@ public class SearchPage {
 		element = driver.findElement(By.id("flight-returning"));
 		return element;
 	}
+	
+	public static void fillReturnDateTextBox(WebDriver driver, String returnDate) {
+		element = driver.findElement(By.id("flight-returning"));
+		element.sendKeys(returnDate);
+	}
 
 	/**
 	 * Returns the search button box element
