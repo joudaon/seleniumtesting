@@ -3,10 +3,15 @@ package page.classes;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 //Search page = home page
 public class SearchPage {
 	public static WebElement element = null;
+	private static final Logger log = LogManager.getLogger(SearchPage.class.getName());
 	
 	/**
 	 * Returns the Flights tab 
@@ -15,6 +20,7 @@ public class SearchPage {
 	 */
 	public static WebElement flightTab(WebDriver driver) {
 		element = driver.findElement(By.id("tab-flight-tab"));
+		log.info("Navigate to flights tab");
 		return element;
 	}
 	
@@ -25,11 +31,13 @@ public class SearchPage {
 	 */
 	public static WebElement originTextBox(WebDriver driver) {
 		element = driver.findElement(By.id("flight-origin"));
+		log.info("Origin text box element found");
 		return element;
 	}
 	
 	public static void fillOriginTextBox(WebDriver driver, String origin) {
 		element = originTextBox(driver);
+		log.info("Enter origin city as " + origin);
 		element.sendKeys(origin);
 	}
 
@@ -40,11 +48,13 @@ public class SearchPage {
 	 */
 	public static WebElement destinationTextBox(WebDriver driver) {
 		element = driver.findElement(By.id("flight-destination"));
+		log.info("Destination text box element found");
 		return element;
 	}
 	
 	public static void fillDestinationTextBox(WebDriver driver, String destination) {
 		element = driver.findElement(By.id("flight-destination"));
+		log.info("Enter destination city as " + destination);
 		element.sendKeys(destination);
 	}
 
@@ -62,6 +72,7 @@ public class SearchPage {
 	public static void fillDepartureDateTextBox(WebDriver driver, String departureDate) {
 		element = driver.findElement(By.id("flight-departing"));
 		element.sendKeys(departureDate);
+		log.info("Enter departure date as " + departureDate);
 	}
 
 	/**
@@ -77,6 +88,7 @@ public class SearchPage {
 	public static void fillReturnDateTextBox(WebDriver driver, String returnDate) {
 		element = driver.findElement(By.id("flight-returning"));
 		element.sendKeys(returnDate);
+		log.info("Enter return date as " + returnDate);
 	}
 
 	/**
@@ -106,5 +118,32 @@ public class SearchPage {
 		driver.findElement(By.id("header-history")).click();
 		element = driver.findElement(By.id("tab-flight-tab"));
 		element.click();
+	}
+	/**
+	 * Click on Advanced Options link
+	 * @param driver
+	 */
+	public static void clickOnAdvancedLink(WebDriver driver) {
+		element = driver.findElement(By.id("advanced-options"));
+		element.click();
+		log.info("Clicked on Advanced Options link");
+	}
+	/**
+	 * Click non-stop check box
+	 * @param driver
+	 */
+	public static void clickNonStopCheckBox(WebDriver driver) {
+		element = driver.findElement(By.id("advanced-flight-nonstop"));
+		element.click();
+		log.info("Clicked non-stop check box");
+	}
+	/**
+	 * Select flight class
+	 * @param driver
+	 */
+	public static void selectFlightClass(WebDriver driver, String flightClass) {
+		Select options = new Select(driver.findElement(By.id("flight-advanced-preferred-class")));
+		options.selectByValue(flightClass);
+		log.info("Select flight class as " + flightClass);
 	}
 }
