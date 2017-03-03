@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
+import utilities.WaitTypes_02;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -119,6 +121,7 @@ public class SearchPage {
 		element = driver.findElement(By.id("tab-flight-tab"));
 		element.click();
 	}
+	
 	/**
 	 * Click on Advanced Options link
 	 * @param driver
@@ -128,6 +131,7 @@ public class SearchPage {
 		element.click();
 		log.info("Clicked on Advanced Options link");
 	}
+	
 	/**
 	 * Click non-stop check box
 	 * @param driver
@@ -137,6 +141,7 @@ public class SearchPage {
 		element.click();
 		log.info("Clicked non-stop check box");
 	}
+	
 	/**
 	 * Select flight class
 	 * @param driver
@@ -145,5 +150,16 @@ public class SearchPage {
 		Select options = new Select(driver.findElement(By.id("flight-advanced-preferred-class")));
 		options.selectByValue(flightClass);
 		log.info("Select flight class as " + flightClass);
+	}
+	
+	/**
+	 * Click on Morning check box to filter the results
+	 * @param driver
+	 */
+	public static void clickMorningFlight(WebDriver driver) {
+		WebElement element = WaitTypes_02.getWhenVisible(driver, 
+				By.id("leg0-morning-departure"), 30);
+		element.click();
+		log.info("Clicked on Morning Time to filter the results");
 	}
 }
