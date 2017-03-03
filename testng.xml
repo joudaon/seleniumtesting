@@ -1,14 +1,15 @@
-<suite name="TestSuite">
-<test name="FireFox Test">
-<parameter name="origin" value="New York" />
-<parameter name="dest" value="Chicago" />
-<parameter name="depDate" value="28/10/2017" />
-<parameter name="retDate" value="31/10/2017" />
+<suite name="TestSuite" parallel="tests">
+<test name="Chrome Test">
+<parameter name="browserType" value="chrome" />
 	<classes>
-		<class name="tutorialselenium.TestNG_ParametersAndDataProviders_31">
-		<methods>
-			<include name="searchFlightsWithMultiData" />
-		</methods>
+		<class name="tutorialselenium.TestNG_MultiBrowserAndParallelTests_32">
+		</class>
+	</classes>
+</test>
+<test name="FireFox Test">
+<parameter name="browserType" value="firefox" />
+	<classes>
+		<class name="tutorialselenium.TestNG_MultiBrowserAndParallelTests_32">
 		</class>
 	</classes>
 </test>

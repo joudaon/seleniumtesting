@@ -173,4 +173,15 @@ public class SearchPage {
 		element.click();
 		log.info("Clicked on Morning Time to filter the results");
 	}
+	
+	/**
+	 * Select flight adults
+	 * @param driver
+	 * @param flightAdults
+	 */
+	public static void selectFlightAdults(WebDriver driver, String flightAdults) {
+		Select options = new Select(driver.findElement(By.id("flight-adults")));
+		options.selectByValue(flightAdults);
+		log.info("Select flight adults as " + flightAdults);
+	}
 }
