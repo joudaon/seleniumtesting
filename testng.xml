@@ -1,16 +1,22 @@
-<suite name="TestSuite" parallel="tests">
-<test name="Chrome Test">
-<parameter name="browserType" value="chrome" />
+<suite name="Listeners TestSuite" parallel="tests">
+
+<listeners>
+	<listener class-name="utilities.SeleniumListeners"></listener>
+</listeners>
+
+<test name="FireFox Listeners Test">
 	<classes>
-		<class name="tutorialselenium.TestNG_MultiBrowserAndParallelTests_32">
-		</class>
-	</classes>
-</test>
-<test name="FireFox Test">
-<parameter name="browserType" value="firefox" />
-	<classes>
-		<class name="tutorialselenium.TestNG_MultiBrowserAndParallelTests_32">
+		<class name="tutorialselenium.TestNG_TestCase_33">
 		</class>
 	</classes>
 </test>
 </suite>
+
+
+<!-- <test name="Chrome Test">
+<parameter name="browserType" value="chrome" />
+	<classes>
+		<class name="tutorial.selenium.TestNG_MultiBrowserAndParallelTests">
+		</class>
+	</classes>
+</test> -->
