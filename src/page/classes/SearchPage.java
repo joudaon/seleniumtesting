@@ -16,6 +16,17 @@ public class SearchPage {
 	private static final Logger log = LogManager.getLogger(SearchPage.class.getName());
 	
 	/**
+	 * Clear all the fields on the Search page
+	 * @param driver
+	 */
+	public static void clearAllFields(WebDriver driver) {
+		driver.findElement(By.id("flight-origin")).clear();
+		driver.findElement(By.id("flight-destination")).clear();
+		driver.findElement(By.id("flight-departing")).clear();
+		driver.findElement(By.id("flight-returning")).clear();
+	}
+	
+	/**
 	 * Returns the Flights tab 
 	 * @param driver
 	 * @return
