@@ -9,6 +9,7 @@
 - [Firebug and Firepath Installation](#firebug-and-firepath-installation)
 - [Setting up Log4j2](#setting-up-log4j2)
 - [Setting up TestNG](#setting-up-testng)
+- [Advanced Reporting](#advanced-reporting)
 
 ## Selenium Web Driver and FF Browser Compatibilities
 
@@ -63,3 +64,14 @@ Log4j2.xml file is created in a folder and then that folder should be added to t
 - Go to Eclipse
 - Go to Help > Install New Software
 - Click "Add..." > TestNG - https://beust.com/eclipse/
+
+## Advanced Reporting
+
+Jars for Advanced Reporting can be downloaded at: http://extentreports.com/community/
+
+Required Jars are the followings:
+
+- freemarker-2.3.23.jar
+- jsoup-1.8.3.jar
+- sqlite-jdbc-3.8.11.1.jar
+- extentreports-2.41.2.jar
