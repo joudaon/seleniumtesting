@@ -1,19 +1,21 @@
-<suite name="Listeners TestSuite" parallel="tests">
+<suite name="MultiThreading TestSuite" parallel="classes" thread-count="2">
 
-<listeners>
-	<listener class-name="utilities.SeleniumListeners"></listener>
-</listeners>
-
-<test name="FireFox Listeners Test">
+<test name="FireFox Test">
 	<classes>
-		<class name="tutorialselenium.TestNG_TestCase_33">
+		<class name="tutorialselenium.TestNG_MultiThreading_34">
+		</class>
+		<class name="tutorialselenium.TestNG_GoogleSearch_34">
 		</class>
 	</classes>
 </test>
 </suite>
 
 
-<!-- <test name="Chrome Test">
+<!--
+<listeners>
+	<listener class-name="utilities.SeleniumListeners"></listener>
+</listeners>
+<test name="Chrome Test">
 <parameter name="browserType" value="chrome" />
 	<classes>
 		<class name="tutorial.selenium.TestNG_MultiBrowserAndParallelTests">
