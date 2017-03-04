@@ -8,6 +8,7 @@
 - [Setting up the Driver 3.0.x](#setting-up-the-driver-3-0-1)
 - [Firebug and Firepath Installation](#firebug-and-firepath-installation)
 - [Setting up Log4j2](#setting-up-log4j2)
+- [Setting up TestNG](#setting-up-testng)
 
 ## Selenium Web Driver and FF Browser Compatibilities
 
@@ -56,3 +57,9 @@ All we need is the following two jars.
 They can be downloaded from: https://logging.apache.org/log4j/2.0/download.html
 
 Log4j2.xml file is created in a folder and then that folder should be added to the build path of the project.
+
+## Setting up TestNG
+
+- Go to Eclipse
+- Go to Help > Install New Software
+- Click "Add..." > TestNG - https://beust.com/eclipse/
