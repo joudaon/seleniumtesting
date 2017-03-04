@@ -12,58 +12,58 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-//import com.relevantcodes.extentreports.ExtentReports;
-//import com.relevantcodes.extentreports.ExtentTest;
-//import com.relevantcodes.extentreports.LogStatus;
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 
 public class SeleniumLoginTest {
 	
 	private WebDriver driver;
 	private String baseUrl;
-	//ExtentReports report;
-	//ExtentTest test;
+	ExtentReports report;
+	ExtentTest test;
 
 	@BeforeClass
 	public void beforeClass() {
 		
 		baseUrl = "http://www.letskodeit.com/";
 		
-		//report = new ExtentReports("C:\\Users\\Uda\\Desktop\\logintest.html");
-		//test = report.startTest("Verify Welcome Text");
+		report = new ExtentReports("C:\\Users\\Uda\\Desktop\\logintest.html");
+		test = report.startTest("Verify Welcome Text");
 		
 
 		driver = new FirefoxDriver();
-		//test.log(LogStatus.INFO, "Browser Started...");
+		test.log(LogStatus.INFO, "Browser Started...");
 		
 		// Maximize the browser's window
 		driver.manage().window().maximize();
-		//test.log(LogStatus.INFO, "Browser Maximized...");
+		test.log(LogStatus.INFO, "Browser Maximized...");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get(baseUrl);
-		//test.log(LogStatus.INFO, "Web applcation opened...");
+		test.log(LogStatus.INFO, "Web applcation opened...");
 	}
 	
 	@Test
 	public void test1_validLoginTest() throws Exception {
 		WebElement signupLink = driver.findElement(By.id("comp-iiqg1vggactionTitle"));
 		signupLink.click();
-		//test.log(LogStatus.INFO, "Clicked on signup link");
+		test.log(LogStatus.INFO, "Clicked on signup link");
 		
 		WebElement loginLink = driver.findElement(By.id("signUpDialogswitchDialogLink"));
 		loginLink.click();
-		//test.log(LogStatus.INFO, "Clicked on login link");
+		test.log(LogStatus.INFO, "Clicked on login link");
 		
 		WebElement emailField = driver.findElement(By.id("memberLoginDialoginputWithValidation5input"));
 		emailField.sendKeys("test@email.com");
-		//test.log(LogStatus.INFO, "Enter email");
+		test.log(LogStatus.INFO, "Enter email");
 		
 		WebElement passwordField = driver.findElement(By.xpath("//div[@id='memberLoginDialogpassword']//input"));
 		passwordField.sendKeys("abcabc");
-		//test.log(LogStatus.INFO, "Enter password");
+		test.log(LogStatus.INFO, "Enter password");
 		
 		WebElement goButton = driver.findElement(By.id("memberLoginDialogoklink"));
 		goButton.click();
-		//test.log(LogStatus.INFO, "Clicked Go Button");
+		test.log(LogStatus.INFO, "Clicked Go Button");
 		
 		Thread.sleep(3000);
 		
@@ -76,13 +76,13 @@ public class SeleniumLoginTest {
 			System.out.println(e.getMessage());
 		}
 		Assert.assertTrue(welcomeText != null);
-		//test.log(LogStatus.PASS, "Verified Welcome Text");
+		test.log(LogStatus.PASS, "Verified Welcome Text");
 	}
 	
 	@AfterClass
 	public void afterClass() {
 		driver.quit();
-		//report.endTest(test);
-		//report.flush();
+		report.endTest(test);
+		report.flush();
 	}
 }
