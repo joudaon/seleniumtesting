@@ -10,6 +10,7 @@
 - [Setting up Log4j2](#setting-up-log4j2)
 - [Setting up TestNG](#setting-up-testng)
 - [Advanced Reporting](#advanced-reporting)
+- [Data Driven Testing](#data-driven-testing)
 
 ## Selenium Web Driver and FF Browser Compatibilities
 
@@ -75,3 +76,20 @@ Required Jars are the followings:
 - jsoup-1.8.3.jar
 - sqlite-jdbc-3.8.11.1.jar
 - extentreports-2.41.2.jar
+
+## Data Driven Testing
+
+Jars For Data Driven Testing can be downloaded at: http://poi.apache.org/download.html
+
+Required Jars are the followings:
+
+- poi-3.16-beta2.jar
+- poi-examples-3.16-beta2.jar
+- poi-excelant-3.16-beta2.jar
+- poi-ooxml-3.16-beta2.jar
+- poi-ooxml-schemas-3.16-beta2.jar
+- poi-scratchpad-3.16-beta2.jar
+- ooxml-lib / xmlbeans-2.6.0.jar
+- commons-codec-1.10.jar
+- commons-logging-1.2.jar
+- junit-4.12.jar
