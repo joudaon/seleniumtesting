@@ -11,6 +11,7 @@
 - [Setting up TestNG](#setting-up-testng)
 - [Advanced Reporting](#advanced-reporting)
 - [Data Driven Testing](#data-driven-testing)
+- [Maven Installation and Setup](#maven-installation-and-setup)
 
 ## Selenium Web Driver and FF Browser Compatibilities
 
@@ -93,3 +94,27 @@ Required Jars are the followings:
 - commons-codec-1.10.jar
 - commons-logging-1.2.jar
 - junit-4.12.jar
+
+## Maven Installation and Setup
+
+Donwload latest Binary zip archive from: http://maven.apache.org/download.cgi
+
+Extract the zip (usually in: C:\apache\apache-maven\)
+
+Set environment variables:
+
+```sh
+$ M2_HOME=C:\Program Files\Apache\apache-maven-3.3.3
+$ M2=%M2_HOME%\bin
+$ MAVEN_OPTS=-Xms256m -Xmx512m
+```
+
+Append the String ";%M2%" to the system variable. 
+
+Go to console and type:
+
+```sh
+$ mvn --version
+```
+
+It should return informative data.
