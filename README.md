@@ -12,6 +12,7 @@
 - [Advanced Reporting](#advanced-reporting)
 - [Data Driven Testing](#data-driven-testing)
 - [Maven Installation and Setup](#maven-installation-and-setup)
+- [Cucumber Setup](#cucumber-setup)
 
 ## Selenium Web Driver and FF Browser Compatibilities
 
@@ -118,3 +119,9 @@ $ mvn --version
 ```
 
 It should return informative data.
+
+## Cucumber Setup
+
+In Eclipse go to Help > Install New Software > Add:
+
+Cucumber Plugin - http://cucumber.github.com/cucumber-eclipse/update-site
