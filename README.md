@@ -13,6 +13,7 @@
 - [Data Driven Testing](#data-driven-testing)
 - [Maven Installation and Setup](#maven-installation-and-setup)
 - [Cucumber Setup](#cucumber-setup)
+- [Code Coverage](#code-coverage)
 
 ## Selenium Web Driver and FF Browser Compatibilities
 
@@ -125,3 +126,13 @@ It should return informative data.
 In Eclipse go to Help > Install New Software > Add:
 
 Cucumber Plugin - http://cucumber.github.com/cucumber-eclipse/update-site
+
+## Code Coverage
+
+We will use EclEmma Plugin for Eclipse.
+
+In Eclipse go to Help > Install New Software > Add: 
+
+EclEmma - http://update.eclemma.org/
+
+More info at: [http://www.eclemma.org/](http://www.eclemma.org/)
