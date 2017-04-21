@@ -1,6 +1,6 @@
-#SELENIUM TESTING
+# SELENIUM TESTING
 
-##Table of Contents
+## Table of Contents
 
 - [Selenium Web Driver and FF Browser Copatibilities](#selenium-web-driver-and-ff-browser-compatibilities)
 - [Selenium Web Driver and Chrome Browser Copatibilities](#selenium-web-driver-and-chrome-browser-compatibilities)
